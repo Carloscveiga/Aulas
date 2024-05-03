@@ -1,5 +1,5 @@
 ## FLAG - FULL STACK WEB DEVELOPMENT
 # Rep de Aulas
 
-- [Exercicio 1](/Ex1/ex1.html)
+- [Exercicio 1](/exercicios/ex1.html)
 
