@@ -13,6 +13,9 @@
     height: 600px;
     margin: 0 auto;
     padding-left: 50px;
+}
 
+#main_div_style {
+    background-color: rgb(163, 163, 163);
 }
 
