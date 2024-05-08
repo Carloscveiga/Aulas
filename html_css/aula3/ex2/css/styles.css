@@ -7,7 +7,7 @@
     padding-right: 25px;
 }
 
-#div_style {
+#div {
     background-color: rgb(143, 143, 143);
     width: 30%;
     height: 600px;
@@ -15,7 +15,7 @@
     padding-left: 50px;
 }
 
-#main_div_style {
+#main_div {
     background-color: rgb(163, 163, 163);
 }
 
