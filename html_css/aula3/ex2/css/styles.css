@@ -1,0 +1,18 @@
+#input_box {
+    border-radius: 30px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#div_style {
+    background-color: rgb(143, 143, 143);
+    width: 30%;
+    height: 600px;
+    margin: 0 auto;
+    padding-left: 50px;
+
+}
+
