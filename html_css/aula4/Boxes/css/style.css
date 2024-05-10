@@ -1,0 +1,61 @@
+.primeira {
+    background-color: darkgoldenrod;
+    padding: 25px;
+    color: white;
+    border: 10px solid red;
+    margin: 30px;
+  }
+  
+  .segunda {
+    background-color: darkslategrey;
+    padding: 50px;
+    color: white;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  
+  .flex {
+    display: flex;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .box3 {
+    float: left;
+  }
+  
+  .box4 {
+    float: right;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .box5 {
+    clear: both;
+  }
+  
+  /*
+  ul li {
+    display: inline-block;
+  }
+  */
+  
+  ul {
+    display: flex;
+    gap: 30px;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
