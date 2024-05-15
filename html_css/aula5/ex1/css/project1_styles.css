@@ -86,7 +86,7 @@ body {
 
 .blue_back_flex_box2 {
     background-color: white;
-    height: 1000px;
+    height: 1008px;
     margin-top: 100px;
 }
 
@@ -113,12 +113,18 @@ body {
     display: inline-block;
     width: 30px; 
     height: 30px; 
-    border: 1px solid black; 
+    border: 1px solid green; 
+    border-radius: 20%;
     background-color: green; 
     text-align: center; 
     line-height: 30px; 
     font-size: 20px; 
     color: white; 
+    margin-right: 10px; 
+}
+.danger-icon {
+    color: grey; 
+    font-size: 40px; 
     margin-right: 10px; 
 }
 
@@ -131,7 +137,7 @@ body {
 
 .project_link {
     background-color: #F4F6FC;
-    width: 49%;
+    width: 49.6%;
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -140,4 +146,6 @@ body {
     font-weight: 42px;
     letter-spacing: 1px;
 }
+
+
 
