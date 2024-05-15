@@ -1,0 +1,143 @@
+body {
+    background-color: white;
+}
+
+.header {
+    display: block;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.empty_text {
+    height: 20px;
+}
+
+.h1_title_text {
+    height: 84px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 84px;
+    letter-spacing: 1px;
+    color: #101214;
+}
+
+.lorem_text {
+    height: 132px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    color: #73808D;
+}
+
+.h2_title_text {
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 52px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 1px;
+    color: #101214;
+}
+
+.blue_back {
+    background-color: #DBECFF;
+    height: 800px;
+    margin-top: 50px;
+}
+
+.blue_back_flex_boxes {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    /*margin-top: 100px;*/
+    /* what ????? */
+    justify-content: space-between;
+}
+
+.blue_back_flex_box {
+    display: block;
+    width: 49%;
+    background-color: white;
+    height: 600px;
+    margin-top: 100px;
+    /* huuuuuh ??????????????? pq nao no blue_back_flex_boxes ????? */
+}
+
+.banner_box {
+    width: 100%;
+    height: 4%;
+}
+
+.blue_back2 {
+    display: flex;
+    background-color: #DBECFF;
+    height: 4500px;
+    margin-top: 50px;
+}
+
+.blue_back_flex_boxes2 {
+    display: block;
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.blue_back_flex_box2 {
+    background-color: white;
+    height: 1000px;
+    margin-top: 100px;
+}
+
+.results {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.results ul {
+    list-style: none;
+    padding-inline-start: 0; /* tava escondido este aqui*/
+}
+
+.results li {
+    color: #73808D;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px; 
+}
+
+.checkmark {
+    display: inline-block;
+    width: 30px; 
+    height: 30px; 
+    border: 1px solid black; 
+    background-color: green; 
+    text-align: center; 
+    line-height: 30px; 
+    font-size: 20px; 
+    color: white; 
+    margin-right: 10px; 
+}
+
+.footer {
+    height: 200px;
+    display: flex;
+    background-color: #E7ECF4;
+    justify-content: space-between; 
+}
+
+.project_link {
+    background-color: #F4F6FC;
+    width: 49%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-weight: 700;
+    font-size: 28px;
+    font-weight: 42px;
+    letter-spacing: 1px;
+}
+
