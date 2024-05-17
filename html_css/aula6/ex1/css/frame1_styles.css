@@ -39,20 +39,47 @@ body {
     margin: 0 auto;
 }
 
+.iframe-container {
+    display: flex;
+    margin-top: 100px;
+}
+
 .iframe_link {
+
     width: 1140px; 
     height: 643px;  
     display: flex; 
     margin: 0 auto; 
 }
 
+.table-container {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+}
 
 .table {
-    display: flex;
-    width: 90%;
-    align-items: center;
-    justify-content: center;
+    width: 80%; 
     text-align: left;
+}
+
+.table table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+.table th {
+    font-style: bold;
+    font-size: large;
+    padding: 4px 12px; 
+}
+
+.table td {
+    padding: 4px 12px; 
+    font-style: bold;
+    font-size: medium;
+    border-top: 4px solid black; 
 }
 
 
@@ -112,7 +139,7 @@ body {
 }
 
 .icon i {
-    color: white; /* Adjust the color of the icons */
+    color: white; 
 }
 
 .trademark {
@@ -123,13 +150,14 @@ body {
 }
 
 .input{
-    text-align: center;
+    text-align: left;
     height: 50px;
     width: 411px;
     border: none;
     font-size: 24px;
     line-height: 28.13px;
     color: #BEBBBB;
+    padding-left: 25px;
 }
 
 .checkbox {
@@ -139,10 +167,10 @@ body {
 }
 
 label {
-    color: white; /* Change font color to white */
-    font-size: 24px; /* Match the font size of the checkbox if desired */
-    font-weight: 700; /* Match the font weight if desired */
-    line-height: 28.13px; /* Match the line height if desired */
+    color: white; 
+    font-size: 24px; 
+    font-weight: 700; 
+    line-height: 28.13px; 
     align-content: center;
 }
 

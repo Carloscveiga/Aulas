@@ -1,13 +1,38 @@
+
+
 body {
     background-color: white;
+    /* width: 100vw;
+    height: 100vh;  */
     width: 1920px;
     height: 3391px;
+
 }
+
+
+
+/************************************************************************************************/
+/********************************** Header ******************************************************/
+/************************************************************************************************/
+/************************************************************************************************/
+
 
 .maio_box {
     width: 100%;
     height: 1078px;
 }
+
+
+/************************************************************************************************/
+/************************************************************************************************/
+
+
+
+/************************************************************************************************/
+/********************************** Main Content ************************************************/
+/************************************************************************************************/
+/************************************************************************************************/
+
 
 .body_box {
     display: flex;
@@ -17,11 +42,297 @@ body {
 
 .content_box{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     background-color: white;
     margin-top: 71px;
     margin-left: 93px;
     margin-right: 93px;
+    padding: 100px;
 }
+
+
+/************************************************************************************************/
+/************************************************************************************************/
+
+
+
+/************************************************************************************************/
+/********************************** Collumns ****************************************************/
+/************************************************************************************************/
+/************************************************************************************************/
+
+
+.right_column {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    width: 40%;
+    margin: 25px;
+}
+
+.left_column {
+    width: 45%;
+    flex-direction: column;
+    margin: 25px;
+}
+
+
+
+/************************************************************************************************/
+/************************************************************************************************/
+
+
+
+
+
+/************************************************************************************************/
+/********************************** Form ********************************************************/
+/************************************************************************************************/
+/************************************************************************************************/
+
+
+.nome {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.formulario input[type="text"] {
+    width: 270px;
+    font-size: 14px; 
+    height: 25px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.malito {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dob {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.formulario input[type="email"] {
+    width: 100%;
+    font-size: 14px; 
+    height: 25px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.formulario input[type="date"] {
+    font-size: 14px; 
+    width: 100%;
+    height: 30px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.formulario input[type="radio"] {
+    margin-right: 10px;
+    margin-bottom: 25px;
+}
+
+
+.formulario input[type="checkbox"] {
+    margin-right: 10px;
+    margin-bottom: 25px;
+}
+
+.formulario button[type="submit"] {
+    background-color: #78E053;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    color:white;
+    font-size: 24px;
+    border: solid 1px grey;
+}
+
+
+
+/************************************************************************************************/
+/********************************** Right top Conatiner *****************************************/
+/************************************************************************************************/
+/************************************************************************************************/
+
+
+.right_picture_container {
+    height: 50%;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.results_jpg {
+    padding-top: 180px;
+    width: 570px;
+    height: 428px;
+}
+
+
+/************************************************************************************************/
+/************************************************************************************************/
+
+
+
+
+
+/************************************************************************************************/
+/********************************** Grid Container **********************************************/
+/************************************************************************************************/
+/************************************************************************************************/
+
+
+.main_grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45%;
+    margin-bottom: 20px;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: white; 
+}
+
+.bupi {
+    grid-column: span 6;
+    padding: 20px;
+    background-color: #00897B;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.complexos_desportivos {
+    grid-column: span 3;
+    padding: 20px;
+    background-color: #00897B;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.perigo_de_incendio_rural {
+    grid-column: span 3;
+    padding: 20px;
+    background-color: #00897B;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.contactos {
+    grid-column: span 2;
+    padding: 20px;
+    background-color: #00897B;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.biblioteca {
+    grid-column: span 2;
+    padding: 20px;
+    background-color: #00897B;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.orcamento_participativo {
+    grid-column: span 2;
+    padding: 20px;
+    background-color: #00897B;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.via_verde_investimento {
+    grid-column: span 2;
+    padding: 20px;
+    background-color: #00897B;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.urbanismo{
+    grid-column: span 2;
+    padding: 20px;
+    background-color: #00897B;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.arquivo_municipal {
+    grid-column: span 2;
+    padding: 20px;
+    background-color: #00897B;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.grid-item p {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+
+/************************************************************************************************/
+/************************************************************************************************/
+
+
+
+/************************************************************************************************/
+/********************************** Footer ******************************************************/
+/************************************************************************************************/
+/************************************************************************************************/
+
+
 
 .footer {
     height: 561px;
@@ -49,7 +360,6 @@ body {
     font-size: 24px;
     line-height: 28.13px;
     margin-bottom: 30px; 
-
 }
 
 .footler_left_menu {
@@ -69,15 +379,6 @@ body {
     justify-content: left; 
     align-items: left; 
     padding-top: 109px;
-    
-    
-}
-
-.footer-menu-options {
-
-    
-
-
 }
 
 .icon {
@@ -88,7 +389,7 @@ body {
 }
 
 .icon i {
-    color: white; /* Adjust the color of the icons */
+    color: white; 
 }
 
 .trademark {
@@ -99,28 +400,28 @@ body {
 }
 
 .input{
-    text-align: center;
+    text-align: left;
     height: 50px;
     width: 411px;
     border: none;
     font-size: 24px;
     line-height: 28.13px;
     color: #BEBBBB;
+    padding-left: 25px;
 }
 
 .checkbox {
     height: 18px;
     width: 18px;
     align-content: center;
-
 }
 
 
 label {
-    color: white; /* Change font color to white */
-    font-size: 24px; /* Match the font size of the checkbox if desired */
-    font-weight: 700; /* Match the font weight if desired */
-    line-height: 28.13px; /* Match the line height if desired */
+    color: white; 
+    font-size: 24px; 
+    font-weight: 700; 
+    line-height: 28.13px; 
     align-content: center;
 }
 
@@ -131,5 +432,8 @@ label {
     height: 50px;
     color:white;
     font-size: 24px;
-
 }
+
+
+/************************************************************************************************/
+/************************************************************************************************/
