@@ -39,7 +39,7 @@ body {
     line-height: 38.73px;
 }
 
-.weird_bar {
+/* .weird_bar {
     display: flex;
     align-items: center;
     height: 1px;
@@ -54,7 +54,7 @@ body {
     border: 1px solid #0D2D49;
     background-color: black;
     border-radius: 50%;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 .line_div {
@@ -62,7 +62,7 @@ body {
     width: 1px;
     border: 1px solid #0D2D49;
     background-color: black;
-    margin-left: 26px;
+    margin-left: 16px;
 }
 
 .line_div1 {
@@ -156,6 +156,24 @@ body {
 .linhas {
     display: flex;
     padding-left: 20px;
+} */
+
+.form input[type="range"] {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 2px;
+    border-radius: 5px;  
+    background: #0D2D49;
 }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background: #0D2D49;
+    cursor: pointer;
+  }
 
 
