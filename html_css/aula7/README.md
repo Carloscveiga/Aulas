@@ -1,8 +1,8 @@
 # FLAG - FULL STACK WEB DEVELOPMENT
 ## Rep de Aulas
-### Aula 6 - html-css
+### Aula 7 - html-css
 
-- [Exercicio 1](/html_css/aula6/ex1/)
+- [Exercicio 1](/html_css/aula7/ex1/)
 
 
 
