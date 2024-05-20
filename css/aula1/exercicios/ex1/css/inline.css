@@ -1,0 +1,37 @@
+.container {
+    background-color: #D9D9D9;
+    height: 88px;
+    width: 1000px;
+
+}
+
+.container div:nth-child(1) {
+    float: left;
+    background-color:#ACF414;
+    ;
+    width: 191px;
+    height: 88px;
+}
+
+.container div:nth-child(2) {
+    float: left;
+    background-color:  #7A54E6;
+
+    width: 191px;
+    height: 88px;
+}
+
+.container div:nth-child(3) {
+    float: left;
+    background-color: #CC1298;
+
+    width: 191px;
+    height: 88px;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
