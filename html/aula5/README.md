@@ -2,7 +2,7 @@
 ## Rep de Aulas
 ### Aula 5 - html-css
 
-- [Exercicio 1](/html_css/aula5/ex1/)
+- [Exercicio 1](/html/aula5/ex1/)
 
 
 
