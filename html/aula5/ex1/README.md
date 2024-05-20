@@ -1,6 +1,6 @@
 # FLAG - FULL STACK WEB DEVELOPMENT
 ## Rep de Aulas
-### Aula 5 - html-css
+### Aula 5 - html
 
 - [Exercicio 1 home page html](/html/aula5/ex1/home.html)
 - [Exercicio 1 home page css](/html/aula5/ex1/css/home_styles.css)
