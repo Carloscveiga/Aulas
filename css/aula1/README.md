@@ -2,6 +2,9 @@
 ## Rep de Aulas
 ### Aula 1 - CSS
 
-- [Exercicio 1](/html/aula1/exercicios/ex1/exercicio1.html)
+- [Floats html](/css/aula1/exercicios/ex1/floats.html)
+- [Floats css](/css/aula1/exercicios/ex1/floats.css)
+- [In line html](/css/aula1/exercicios/ex1/inline.html)
+- [In line css](/css/aula1/exercicios/ex1/inline.css)
 
 
