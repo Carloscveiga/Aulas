@@ -2,7 +2,8 @@
 ## Rep de Aulas
 ### Aula 2 - CSS
 
-- [html](/css/aula2/exercicios/ex1/.html)
+- [positions html](/css/aula2/exercicios/ex1/positions.html)
+- [positions css](/css/aula2/exercicios/ex1/positions.css)
 
 
 
