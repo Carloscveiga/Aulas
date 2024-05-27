@@ -1,0 +1,154 @@
+
+.container1:nth-child(1) {
+    height: 200px;
+    width: 400px;
+    background-color: green;
+}
+
+.container1:nth-child(1):hover {
+    background-color: red;
+}
+
+.container2 > div {
+    display: flex;
+    height: 200px;
+    width: 400px;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 > div:hover {
+
+    background-color: red;
+    color: white;
+
+}
+
+
+
+/************************* Main container ***************************/
+
+.container3 {
+    display: flex;
+    gap: 20px;
+    background-color: #AFE241;
+    height: 50px;    
+    border: solid 1px black;
+}
+
+/************************* Sub container1 ***************************/
+
+.container3 > .hover-container > div:nth-child(1) {
+    display: flex;
+    background-color: #AFE241;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    color: black;
+}
+
+.container3 > .hover-container > .hidden-menu {
+    display: none;
+    background-color: #E241BF;
+    color: white;
+}
+
+.hidden-menu p {
+    padding-left: 25px;
+}
+
+.container3 > .hover-container:hover > .hidden-menu {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100px;
+}
+
+/*********************************************************************/
+
+
+
+
+
+/************************* Sub container2 ***************************/
+
+
+.container3 > .hover-container2 > div:nth-child(1) {
+    display: flex;
+    background-color:#AFE241;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+}
+
+
+.container3 > .hover-container2 > .hidden-menu {
+    display: none;
+    background-color: #E241BF;
+    color: white;
+}
+
+.container3 > .hover-container2:hover > .hidden-menu {
+    display: flex;
+    flex-direction: column; 
+    width: 100px;
+}
+
+
+/************************* Sub container3 ***************************/
+
+.container3 > .hover-container3 > div:nth-child(1) {
+    display: flex;
+    background-color: #AFE241;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+}
+
+
+.container3 > .hover-container3 > .hidden-menu {
+    display: none;
+    background-color: #E241BF;
+    color: white;
+}
+
+.container3 > .hover-container3:hover > .hidden-menu {
+    display: flex;
+    flex-direction: column; 
+    width: 100px;
+}
+
+
+/************************* Sub container4 ***************************/
+
+.container3 > .hover-container4 > div:nth-child(1) {
+    display: flex;
+    width: 100px;
+    background-color: #AFE241;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.container3 > .hover-container4 > .hidden-menu {
+    display: none;
+    background-color: #E241BF;
+    color: white;
+}
+
+.container3 > .hover-container4:hover > .hidden-menu {
+    display: flex;
+    flex-direction: column; 
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
