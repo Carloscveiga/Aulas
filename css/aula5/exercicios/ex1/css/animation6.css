@@ -1,0 +1,63 @@
+body {
+    width: 400px;
+}
+.container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.figura {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: moveAndTransform 12s ;
+}
+@keyframes moveAndTransform {
+    0% {
+        bottom: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background-color: green;
+        transform: rotate(0deg);
+    }
+    25% {
+        bottom: 150px;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: grey;
+        border-radius: 50%;
+        transform: rotate(0deg);
+    }
+    50% {
+        bottom: 0;
+        left: calc(100% - 80px);
+        width: 80px;
+        height: 80px;
+        background-color: red;
+        border-radius: 0;
+        transform: rotate(45deg);
+    }
+    75% {
+        bottom: 0;
+        left: calc(100% - 80px);
+        width: 80px;
+        height: 80px;
+        background-color: blue;
+        border-radius: 0;
+        transform: rotate(45deg);
+    }
+    100% {
+        bottom: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background-color: green;
+        border-radius: 0;
+        transform: rotate(0deg);
+    }
+}

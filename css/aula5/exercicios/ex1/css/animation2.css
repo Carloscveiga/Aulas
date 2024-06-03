@@ -1,0 +1,47 @@
+.bolas {
+    display: flex;   
+    animation-name: bate-bolas;
+    position: absolute;
+}
+
+
+.bola1 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin-right: 150px;
+    position: absolute;
+}
+
+.bola2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-left: 150px;
+    position: absolute;
+
+}
+
+@keyframes bate-bolas {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: 250px;
+    }
+}
+
+.bolas:active > .bola1  {
+    animation-name: bate-bolas;
+    animation-duration: 1s;
+}
+
+.bolas:active > .bola2  {
+    animation-name: bate-bolas;
+    animation-delay:  150ms;
+    animation-duration: 1s;
+}
+
+
+
