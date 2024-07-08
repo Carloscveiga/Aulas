@@ -8,3 +8,5 @@
 - [Aula 4](/css/aula4/)
 - [Aula 5](/css/aula5/)
 - [Aula 6](/css/aula6/)
+- [Aula 7](/css/aula7/)
+- [Aula 8](/css/aula8/)
