@@ -5,4 +5,5 @@
 - [Html](/html/)
 - [CSS](/css/)
 - [SASS](/sass/)
+- [Tailwind](/Tailwind3/)
 
