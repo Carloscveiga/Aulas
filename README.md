@@ -6,4 +6,5 @@
 - [CSS](/css/)
 - [SASS](/sass/)
 - [Tailwind](/Tailwind3/)
+- [Java](/JS/)
 
