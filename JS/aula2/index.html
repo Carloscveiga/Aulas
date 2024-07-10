@@ -13,12 +13,13 @@
 <body>
     
     <div id="resultBox"></div>
+    
     <label for="ageInput">Enter your age:</label>
-    <input type="number" id="ageInput">
-    <button id="goButton">GO</button>
+    <input type="number" id="ageInput" placeholder="Enter your age" title="Please enter your age">
+    
+    <button type="button" id="goButton" title="Click to check your drink suggestion">GO</button>
 
     <script>
-        
         let resultBox = document.querySelector("#resultBox");
         let ageInput = document.querySelector("#ageInput");
         let goButton = document.querySelector("#goButton");
@@ -26,14 +27,13 @@
         goButton.addEventListener("click", function (){
             let age = ageInput.value;
             if (age >= 18) {
-                console.log("toma la uma cerveja");
+                resultBox.textContent = "toma la uma cerveja";
             } else if (age < 10) {
-                console.log("Toma la um bongo");
+                resultBox.textContent = "Toma la um bongo";
             } else {
-                console.log("Toma la uma pepsi");
+                resultBox.textContent = "Toma la uma pepsi";
             }
-        })
-
+        });
     </script>
 </body>
 </html>
