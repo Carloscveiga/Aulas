@@ -4,7 +4,7 @@
   "description": "Descrição do seu projeto",
   "main": "index.js",
   "scripts": {
-    "watch": "npx tailwindcss -i ./src/assets/css/main.css -o ./src/build/style.css --watch"
+    "watch": "npx tailwindcss -i ./src/assets/css/main.css -o .Aulas/Tailwind3/src/build/style.css --watch"
   },
   "keywords": [],
   "author": "Seu Nome",
