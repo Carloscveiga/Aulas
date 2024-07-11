@@ -5,6 +5,6 @@
 - [Html](/html/)
 - [CSS](/css/)
 - [SASS](/sass/)
-- [Tailwind](/Tailwind3/)
+- [Tailwind](/Tailwind/)
 - [JavaScipt](/JS/)
 
