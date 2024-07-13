@@ -22,14 +22,6 @@
 // Only the room is affected by the discount. Breakfast price stays the same.
 // ```
 
-// ### 7.4
-// Deluxe Suites <br />
-// Continue from the last exercise.<br />
-// Ask the user which type of room they would like<br />
-// >  Base price per room:<br />
-// >  Normal room: 90€<br />
-// >  Deluxe room: 120€<br />
-// >  Deluxe suites: 150€<br />
 
 
 let readlineSync = require("readline-sync");
