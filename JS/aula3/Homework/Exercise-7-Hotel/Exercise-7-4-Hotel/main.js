@@ -39,11 +39,11 @@ console.log("What type of room would you like? We have a normal room, a deluxe r
 let typeOfRoom = readlineSync.question(": ");
 
 let hotelNightCost;
-if (typeOfRoom === "normal") {
+if (typeOfRoom == "normal") {
   hotelNightCost = 90;
-} else if (typeOfRoom === "deluxe") {
+} else if (typeOfRoom == "deluxe") {
   hotelNightCost = 120;
-} else if (typeOfRoom === "deluxeXL") {
+} else if (typeOfRoom == "deluxeXL") {
   hotelNightCost = 150;
 }
 

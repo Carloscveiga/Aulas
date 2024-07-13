@@ -49,11 +49,11 @@ console.log("Will you be joined by any guests? And how many? (Enter 1 or 2)");
 let numberOfGuests = parseInt(readlineSync.question(": "));
 
 let hotelNightCost;
-if (typeOfRoom === "normal") {
+if (typeOfRoom == "normal") {
   hotelNightCost = 90;
-} else if (typeOfRoom === "deluxe") {
+} else if (typeOfRoom == "deluxe") {
   hotelNightCost = 120;
-} else if (typeOfRoom === "deluxeXL") {
+} else if (typeOfRoom == "deluxeXL") {
   hotelNightCost = 150;
 }
 
