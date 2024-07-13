@@ -59,7 +59,6 @@ if (numberOfNights >= 15) {
 } else if (numberOfNights >= 5) {
   discount = 0.10;
 }
-let discountedRoomCost = roomCost - (roomCost * discount);
-let totalCost = (discountedRoomCost + breakfastCost).toFixed(2);
+let totalCost = ((roomCost + breakfastCost) - ((roomCost + breakfastCost) * discount)).toFixed(2);
 
 console.log("Hello. " + numberOfNights + " nights will cost " + totalCost + " EUR, including breakfast and a discount of " + (discount * 100) + "% for a " + typeOfRoom + " room.");
