@@ -18,8 +18,9 @@ const hotelNightCost = 90;
 const hotelBreakfastCost = 10;
 console.log("How many nights would like to stay for?");
 let numberOfNights = readlineSync.question(": ");
+
 let roomCost = numberOfNights * hotelNightCost;
 let breakfastCost = numberOfNights * hotelBreakfastCost;
-const hotelCost = (roomCost + breakfastCost).toFixed(2);
+let hotelCost = (roomCost + breakfastCost).toFixed(2);
 
 console.log("Hello. " + numberOfNights + " nights will cost " + hotelCost + " EUR, including breakfast.");

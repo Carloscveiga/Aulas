@@ -12,6 +12,6 @@ let readlineSync = require("readline-sync");
 const hotelNightCost = 90;
 console.log("How many nights would like to stay for?");
 let numberOfNights = readlineSync.question(": ");
-const hotelCost = (numberOfNights * hotelNightCost).toFixed(2);
+let hotelCost = (numberOfNights * hotelNightCost).toFixed(2);
 
 console.log("Hello. " + numberOfNights + " nights is " + hotelCost + " EUR.");

@@ -58,10 +58,11 @@ if (typeOfRoom == "normal") {
 }
 
 const hotelBreakfastCost = 10;
+const hotelGuestCost = 10;
 let roomCost = numberOfNights * hotelNightCost;
-let additionalGuestCost = 10 * numberOfGuests * numberOfNights; 
+let additionalGuestCost = hotelGuestCost * numberOfGuests * numberOfNights; //guests are charged per night
 let breakfastCost = (numberOfNights * hotelBreakfastCost) * (numberOfGuests + 1); 
-let totalCostBeforeDiscount = roomCost + additionalGuestCost + breakfastCost;
+let totalCostBeforeDiscount = roomCost + additionalGuestCost; 
 
 let discount = 0;
 if (numberOfNights >= 15) {
@@ -72,5 +73,7 @@ if (numberOfNights >= 15) {
   discount = 0.10;
 }
 
-let discountedTotalCost = (totalCostBeforeDiscount - (totalCostBeforeDiscount * discount)).toFixed(2);
-console.log("Hello. " + numberOfNights + " nights will cost " + discountedTotalCost + " EUR, including breakfast for you and " + numberOfGuests + " guests and a discount of " + (discount * 100) + " % for a " + typeOfRoom + " room.");
+let roomCostWithDiscount = (totalCostBeforeDiscount * (1 - discount)); //discount is applied only to room cost not brekie
+let totalCost = (roomCostWithDiscount + breakfastCost).toFixed(2); 
+
+console.log("Hello. " + numberOfNights + " nights will cost " + totalCost + " EUR, including breakfast for you and " + numberOfGuests + " guests and a discount of " + (discount * 100) + " % for a " + typeOfRoom + " room.");

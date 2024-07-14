@@ -44,7 +44,8 @@ if (numberOfNights >= 15) {
 } else if (numberOfNights >= 5) {
   discount = 0.10;
 }
-let totalCost = ((roomCost + breakfastCost) - ((roomCost + breakfastCost) * discount)).toFixed(2);
 
+let roomCostWithDiscount = (roomCost * (1 - discount)); //discount is applied only to room cost not brekie
+let totalCost = (roomCostWithDiscount + breakfastCost).toFixed(2);
 
-console.log("Hello. " + numberOfNights + " nights will cost " + totalCost + " EUR, including breakfast and a discount of " + (discount * 100) + "% ");
+console.log("Hello. " + numberOfNights + " nights will cost " + totalCost + " EUR, including breakfast and a discount of " + (discount * 100) + "% on the room.");
