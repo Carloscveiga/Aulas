@@ -18,7 +18,10 @@ module.exports = {
       white: '#fff',
       brown: '#333333',
       'border-color': '#404040',
-      green: '#004e00'
+      green: '#004e00',
+      'gray-dark': '#C4C4C4',
+      
+
     },
     boxShadow: {
       'my-shadow': '37px 37px 80px rgba(0, 0, 0, 0.1)',
