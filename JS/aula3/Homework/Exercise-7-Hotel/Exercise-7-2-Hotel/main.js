@@ -16,11 +16,22 @@ let readlineSync = require("readline-sync");
 
 const hotelNightCost = 90;
 const hotelBreakfastCost = 10;
-console.log("How many nights would like to stay for?");
-let numberOfNights = readlineSync.question(": ");
+let isValidInput = false;
 
-let roomCost = numberOfNights * hotelNightCost;
-let breakfastCost = numberOfNights * hotelBreakfastCost;
-let hotelCost = (roomCost + breakfastCost).toFixed(2);
+console.log("How many nights would you like to stay for?");
 
-console.log("Hello. " + numberOfNights + " nights will cost " + hotelCost + " EUR, including breakfast.");
+while (!isValidInput) {
+    numberOfNights = readlineSync.question(": ");
+
+    if (isNaN(numberOfNights)) {
+        console.log("That is not a valid value. Please input a number.");
+    } else if (parseInt(numberOfNights) <= 0) {
+        console.log("That is not a valid positive value. Please input a positive number.");
+    } else {
+        let roomCost = numberOfNights * hotelNightCost;
+        let breakfastCost = numberOfNights * hotelBreakfastCost;
+        let hotelCost = (roomCost + breakfastCost).toFixed(2);
+        console.log("Hello. " + numberOfNights + " nights will cost " + hotelCost + " EUR, including breakfast.");
+        isValidInput = true; 
+    }
+}

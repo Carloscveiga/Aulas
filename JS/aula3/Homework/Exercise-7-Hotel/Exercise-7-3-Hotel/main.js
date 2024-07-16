@@ -22,30 +22,35 @@
 // Only the room is affected by the discount. Breakfast price stays the same.
 // ```
 
-
-
 let readlineSync = require("readline-sync");
 
 const hotelNightCost = 90;
 const hotelBreakfastCost = 10;
+let isValidInput = false;
 
 console.log("How many nights would you like to stay for?");
-let numberOfNights = readlineSync.question(": ");
 
+while (!isValidInput) {
+  numberOfNights = readlineSync.question(": ");
 
-let roomCost = numberOfNights * hotelNightCost;
-let breakfastCost = numberOfNights * hotelBreakfastCost;
-
-let discount = 0;
-if (numberOfNights >= 15) {
-  discount = 0.20;
-} else if (numberOfNights >= 10) {
-  discount = 0.15;
-} else if (numberOfNights >= 5) {
-  discount = 0.10;
+  if (isNaN(numberOfNights)) {
+      console.log("That is not a valid value. Please input a number.");
+  } else if (parseInt(numberOfNights) <= 0) {
+      console.log("That is not a valid positive value. Please input a positive number.");
+  } else {
+    let discount = 0;
+    if (numberOfNights >= 15) {
+      discount = 0.20;
+    } else if (numberOfNights >= 10) {
+      discount = 0.15;
+    } else if (numberOfNights >= 5) {
+      discount = 0.10;
+    }    
+    let roomCost = numberOfNights * hotelNightCost;
+    let breakfastCost = numberOfNights * hotelBreakfastCost;
+    let roomCostWithDiscount = (roomCost * (1 - discount)); //discount is applied only to room cost not brekie
+    let totalCost = (roomCostWithDiscount + breakfastCost).toFixed(2);
+    console.log("Hello. " + numberOfNights + " nights will cost " + totalCost + " EUR, including breakfast and a discount of " + (discount * 100) + "% on the room.");
+    isValidInput = true; 
+  }
 }
-
-let roomCostWithDiscount = (roomCost * (1 - discount)); //discount is applied only to room cost not brekie
-let totalCost = (roomCostWithDiscount + breakfastCost).toFixed(2);
-
-console.log("Hello. " + numberOfNights + " nights will cost " + totalCost + " EUR, including breakfast and a discount of " + (discount * 100) + "% on the room.");

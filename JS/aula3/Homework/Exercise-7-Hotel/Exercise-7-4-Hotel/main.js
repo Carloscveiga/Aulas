@@ -33,35 +33,59 @@
 
 let readlineSync = require("readline-sync");
 
-console.log("How many nights would you like to stay for?");
-let numberOfNights = readlineSync.question(": ");
-console.log("What type of room would you like? We have a normal room, a deluxe room or a deluxe suite. (Enter 'normal', 'deluxe' or 'deluxeXL')");
-let typeOfRoom = readlineSync.question(": ");
-
+const hotelBreakfastCost = 10;
+let isValidInput = false;
+let numberOfNights;
+let typeOfRoom;
 let hotelNightCost;
-if (typeOfRoom == "normal") {
-  hotelNightCost = 90;
-} else if (typeOfRoom == "deluxe") {
-  hotelNightCost = 120;
-} else if (typeOfRoom == "deluxeXL") {
-  hotelNightCost = 150;
+
+console.log("How many nights would you like to stay for?");
+
+while (!isValidInput) {
+    numberOfNights = readlineSync.question(": ");
+
+    if (isNaN(numberOfNights)) {
+        console.log("That is not a valid value. Please input a number.");
+    } else if (parseInt(numberOfNights) <= 0) {
+        console.log("That is not a valid positive value. Please input a positive number.");
+    } else {
+        isValidInput = true; 
+    }
+}
+
+isValidInput = false; 
+console.log("What type of room would you like? We have a normal room, a deluxe room or a deluxe suite. (Enter 'normal', 'deluxe' or 'deluxeXL')");
+
+while (!isValidInput) {
+    typeOfRoom = readlineSync.question(": ");
+
+    if (typeOfRoom === "normal") {
+        hotelNightCost = 90;
+        isValidInput = true;
+    } else if (typeOfRoom === "deluxe") {
+        hotelNightCost = 120;
+        isValidInput = true;
+    } else if (typeOfRoom === "deluxeXL") {
+        hotelNightCost = 150;
+        isValidInput = true;
+    } else {
+        console.log("That is not a valid room type. Please enter 'normal', 'deluxe' or 'deluxeXL'.");
+    }
 }
 
 let roomCost = numberOfNights * hotelNightCost;
-const hotelBreakfastCost = 10;
 let breakfastCost = numberOfNights * hotelBreakfastCost;
 
 let discount = 0;
 if (numberOfNights >= 15) {
-  discount = 0.20;
+    discount = 0.20;
 } else if (numberOfNights >= 10) {
-  discount = 0.15;
+    discount = 0.15;
 } else if (numberOfNights >= 5) {
-  discount = 0.10;
+    discount = 0.10;
 }
 
-let roomCostWithDiscount = (roomCost * (1 - discount)); //discount is applied only to room cost not brekie
+let roomCostWithDiscount = roomCost * (1 - discount); //discount is applied only to room cost not brekie
 let totalCost = (roomCostWithDiscount + breakfastCost).toFixed(2);
-
 
 console.log("Hello. " + numberOfNights + " nights will cost " + totalCost + " EUR, including breakfast and a discount of " + (discount * 100) + "% for a " + typeOfRoom + " room.");
