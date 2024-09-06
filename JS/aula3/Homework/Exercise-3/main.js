@@ -10,10 +10,10 @@ let readlineSync = require("readline-sync");
 
 const usdValue = 0.95;
 console.log("Please enter the amount to convert:");
-let eurAmount = readlineSync.question(": ");
-const convertedValue = (eurAmount * usdValue).toFixed(2);
+let usdAmount = readlineSync.question(": ");
+const convertedValue = (usdAmount * usdValue).toFixed(2);
 
-console.log("Hello. " + eurAmount + " EUR is equal to " + convertedValue + " USD.");
+console.log("Hello. " + usdAmount + " USD is equal to " + convertedValue + " EUR.");
  
 
 
