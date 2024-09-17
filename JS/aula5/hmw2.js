@@ -144,6 +144,3 @@ console.log("Highest:", result.highest);
 console.log("Lowest:", result.lowest);
 
 console.timeEnd("Execution Time"); // fim do script
-
-
-
